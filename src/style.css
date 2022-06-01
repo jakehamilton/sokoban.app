@@ -1,0 +1,82 @@
+/** These are your app's global styles */
+:root {
+	--nord0: #2e3440;
+	--nord1: #3b4252;
+	--nord2: #434c5e;
+	--nord3: #4c566a;
+	--nord4: #d8dee9;
+	--nord5: #e5e9f0;
+	--nord6: #eceff4;
+	--nord7: #8fbcbb;
+	--nord8: #88c0d0;
+	--nord9: #81a1c1;
+	--nord10: #5e81ac;
+	--nord11: #bf616a;
+	--nord12: #d08770;
+	--nord13: #ebcb8b;
+	--nord14: #a3be8c;
+	--nord15: #b48ead;
+
+	--text: var(--nord0);
+	--text-light: var(--nord1);
+	--background: var(--nord4);
+	--background-light: var(--nord5);
+
+	--failure: var(--nord11);
+	--caution: var(--nord12);
+	--warning: var(--nord13);
+	--success: var(--nord14);
+	--info: var(--nord10);
+	--accent: var(--nord9);
+	--accent-secondary: var(--nord15);
+
+	--space: 8px;
+	--space2: calc(var(--space) * 2);
+	--space3: calc(var(--space) * 3);
+	--space4: calc(var(--space) * 4);
+	--space5: calc(var(--space) * 5);
+	--space6: calc(var(--space) * 6);
+	--space7: calc(var(--space) * 7);
+	--space8: calc(var(--space) * 8);
+
+	--round: 4px;
+	--round2: calc(var(--round) * 2);
+	--round3: calc(var(--round) * 3);
+	--round4: calc(var(--round) * 4);
+	--round5: calc(var(--round) * 5);
+	--round6: calc(var(--round) * 6);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--text: var(--nord6);
+		--text-light: var(--nord4);
+		--background: var(--nord0);
+		--background-light: var(--nord3);
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	background: var(--background);
+	color: var(--text);
+	font: 100%/1.21 system-ui, helvetica, sans-serif;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	font: inherit;
+	color: inherit;
+	text-decoration: none;
+}
+
+.app {
+	width: 100%;
+	height: 100%;
+}

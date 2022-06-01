@@ -1,0 +1,47 @@
+.GridTools {
+	display: flex;
+	justify-content: center;
+	padding: var(--space);
+	gap: var(--space2);
+}
+
+.button {
+	width: 80px;
+	height: 80px;
+	border-radius: var(--round2);
+	background: var(--background-light);
+	border: none;
+	color: var(--text);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	border: 2px solid transparent;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 4px;
+	font-size: 1rem;
+}
+
+.button:focus-visible {
+	border-color: var(--text);
+	outline: none;
+}
+
+.enabled {
+	border-color: var(--accent);
+}
+
+.wall {
+	width: 42px;
+	height: 42px;
+	border-radius: var(--round2);
+	background: var(--background-light);
+	border: 2px solid var(--background);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	.empty {
+		filter: invert(100%);
+	}
+}

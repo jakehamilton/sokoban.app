@@ -1,0 +1,33 @@
+/**
+ * This is "Modular CSS", because the filename ends with `.module.css`.
+ * In CSS Modules, classes are scoped to your component by default.
+ * To use a class defined in your CSS, you must import its name:
+ *     import style from './style.module.css';
+ *     <div class={style.page}></div>
+ */
+
+.Home {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 50px;
+	width: 100%;
+	height: 100%;
+}
+
+.title {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.linkButton {
+	display: block;
+	border: none;
+	background: var(--background-light);
+	padding: 12px var(--space2);
+	border-radius: var(--round2);
+	font-weight: bold;
+	color: var(--text);
+	cursor: pointer;
+}

@@ -1,0 +1,51 @@
+.EditableCell {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	border: 4px solid transparent;
+	cursor: pointer;
+	transition: border-color 300ms ease-in;
+	flex-shrink: 0;
+}
+
+.EditableCell:hover {
+	border-color: var(--text);
+	transition: border-color 100ms linear;
+}
+
+.empty {
+	background: var(--background);
+	border-color: var(--background);
+}
+
+.box {
+	border-radius: var(--round2);
+}
+
+.wall {
+	border-radius: var(--round2);
+	background: var(--background-light);
+	border-color: var(--background-light);
+}
+
+.player {
+	border-radius: 10px;
+}
+
+.goal {
+	border-radius: var(--round2);
+}
+
+.sprite {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	.goal {
+		color: var(--nord0);
+	}
+}

@@ -1,0 +1,102 @@
+.Play {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: var(--space2);
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.headerLeft {
+	display: flex;
+	align-items: center;
+}
+
+.headerRight {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	justify-content: flex-end;
+	gap: var(--space);
+}
+
+.home {
+	display: flex;
+	align-items: center;
+	gap: var(--space);
+	background: var(--background-light);
+	padding: var(--space) var(--space2);
+	border-radius: var(--round2);
+	font-weight: bold;
+}
+
+.editingToggle,
+.shareButton {
+	border: none;
+	background: var(--background-light);
+	padding: 12px var(--space2);
+	border-radius: var(--round2);
+	font-weight: bold;
+	color: var(--text);
+	cursor: pointer;
+}
+
+.shareButton {
+	color: var(--nord5);
+	background: var(--accent);
+	position: relative;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+	.shareButton {
+		color: var(--text);
+	}
+}
+
+.movesInput {
+	border: none;
+	background: transparent;
+	padding: 4px var(--space2);
+	border-radius: var(--round2);
+	font-weight: bold;
+	color: var(--text);
+	font-size: 3rem;
+	width: 128px;
+	line-height: 2.5rem;
+	color-scheme: light dark;
+}
+
+.movesInput:focus {
+	outline: 2px solid var(--text);
+}
+
+.toast {
+	position: absolute;
+	right: 0;
+	top: 100%;
+	margin-top: var(--space);
+	background: var(--background-light);
+	padding: 12px var(--space2);
+	border-radius: var(--round2);
+	font-weight: bold;
+	color: var(--text);
+	animation: fade-in 150ms ease-out forwards;
+	white-space: nowrap;
+	cursor: initial;
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
