@@ -1,12 +1,11 @@
-# Preact Vite Template
+# sokoban.app
 
-This template will have you up-and-running with [Preact] and [Vite] in no time.
+Create and share puzzles with your friends!
+
+[Play Now](https://sokoban.app)
 
 ### Commands
 
 - `npm start`: start the development server
 - `npm run build`: build for production
 - `npm run preview`: serve a production build locally for testing
-
-[preact]: https://preactjs.com
-[vite]: https://vite.dev
